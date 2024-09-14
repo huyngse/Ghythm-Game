@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 42740290}
   - component: {fileID: 42740289}
   m_Layer: 0
-  m_Name: Buttons_Red
+  m_Name: Buttons_2
   m_TagString: Activator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -375,7 +375,7 @@ GameObject:
   - component: {fileID: 335185281}
   - component: {fileID: 335185280}
   m_Layer: 0
-  m_Name: Buttons_Yellow
+  m_Name: Buttons_3
   m_TagString: Activator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -459,7 +459,7 @@ GameObject:
   - component: {fileID: 450328916}
   - component: {fileID: 450328915}
   m_Layer: 0
-  m_Name: Buttons_Blue
+  m_Name: Buttons_1
   m_TagString: Activator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1975,7 +1975,7 @@ GameObject:
   - component: {fileID: 1954822627}
   - component: {fileID: 1954822626}
   m_Layer: 0
-  m_Name: Buttons_Green
+  m_Name: Buttons_4
   m_TagString: Activator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
