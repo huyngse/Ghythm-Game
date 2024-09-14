@@ -42,6 +42,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Node
+  - name: Note
     uniqueID: 2658339949
     locked: 0

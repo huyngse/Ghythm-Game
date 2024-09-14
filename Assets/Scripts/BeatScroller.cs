@@ -10,6 +10,8 @@ public class BeatScroller : MonoBehaviour
     private float beatTempo = 128;
     [SerializeField]
     private bool hasStarted = false;
+    [SerializeField]
+    private float scrollSpeed = 1;
     void Start()
     {
         beatTempo /= 60f;
@@ -26,7 +28,7 @@ public class BeatScroller : MonoBehaviour
         }
         else
         {
-            transform.position -= new Vector3(0f, beatTempo * Time.deltaTime, 0f);
+            transform.position -= new Vector3(0f, beatTempo * Time.deltaTime * scrollSpeed, 0f);
         }
     }
 }
