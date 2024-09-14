@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager : Singleton<GameManager>
 {
     [Header("References")]
     [SerializeField]
@@ -36,16 +36,16 @@ public class GameManager : MonoBehaviour
     private IEnumerator PlayAudioAfterDelay()
     {
         yield return new WaitForSeconds(2f);
-        audioSource.Play();
+        SoundManager.Instance.PlaySong();
     }
 
-    public void NoteHit()
+    public void NoteHit(int score)
     {
-
+        Debug.Log(score);
     }
 
     public void NoteMiss()
     {
-
+        Debug.Log("Miss");
     }
 }

@@ -20,6 +20,7 @@ public class ButtonController : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(keyToPress)) {
+            SoundManager.Instance.PlayEffect("hit");
             spriteRenderer.sprite = pressedImage;
         }
         if (Input.GetKeyUp(keyToPress)) {
