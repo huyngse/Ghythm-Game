@@ -9,9 +9,11 @@ public class BeatScroller : MonoBehaviour
     [SerializeField]
     private float beatTempo = 128;
     [SerializeField]
-    private bool hasStarted = false;
-    [SerializeField]
     private float scrollSpeed = 1;
+    private bool hasStarted = false;
+
+    public bool HasStarted { get => hasStarted; set => hasStarted = value; }
+
     void Start()
     {
         beatTempo /= 60f;
@@ -19,12 +21,12 @@ public class BeatScroller : MonoBehaviour
 
     void Update()
     {
-        if (!hasStarted)
+        if (!HasStarted)
         {
-            if (Input.anyKeyDown)
-            {
-                hasStarted = true;
-            }
+            // if (Input.anyKeyDown)
+            // {
+            //     HasStarted = true;
+            // }
         }
         else
         {
